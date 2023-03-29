@@ -1,0 +1,381 @@
+$bc-1:#D9D9D9;
+$bc-2:#FFFFFF;
+$date-title:#3C3F49;
+$date-bottom:#8E96A5;
+$goose-bottom:#616C81;
+$border-c:#C8D2DC;
+$blue-c:#1A73E7;
+$blue-bc:#1A73E7;
+$mob-date-bottom:#B2C0CE;
+$mobile-width: 784px;
+
+*{
+    margin: 0;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sides{
+        width: 785px;
+        height: 545px;
+        background-color: $bc-2;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.16);
+        border-radius: 8px;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        .ticket-container{
+            width: 529px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border-right: 2px dashed $border-c;
+                .date-box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .mon{
+                        font-family: 'Noto Sans Georgian';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $date-title;
+
+                    }
+                    .arrive{
+                        font-family: 'Noto Sans Georgian';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color:$date-bottom;
+                        display: flex;
+                        gap: 15px;
+                        align-items: center;
+                        .goose-plus{
+                            display: flex;
+                            gap: 5px;
+                            .goose{
+                                border-radius: 15px;
+                            };
+                            .plusbtn{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                width: 32px;
+                                background: #F4F6F8;
+                                border-radius: 34px;
+                                color: $goose-bottom;
+                        }
+                    }
+                        
+                }; 
+            }
+            .top-bottom{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                .top{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 470px;
+                    .time{
+                        font-family: 'Noto Sans Georgian';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $date-title;
+                       
+                       
+                    }
+                    .img-container{
+                        display: flex;
+                        .circle-box{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+                .center{
+                    width: 500px;
+                    .air-container{
+                        display: flex;
+                        justify-content: space-between;
+                        .air-box{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 10px;
+                            .air-middle-info{
+                                font-family: 'Noto Sans Georgian';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: $date-bottom;
+                            }
+                        }
+                        .air-info{
+                            font-family: 'Noto Sans Georgian';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: $date-bottom;
+                        }
+                    }
+                }
+                .bottom{
+                    margin-top: 20px;
+                    .border{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border: 1px solid $border-c;
+                        width: 167px;
+                        height: 32px;
+                        border-radius: 34px;
+                        justify-content: center;
+                        .p-border{
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: $date-title;
+                        }
+                    }
+                }
+            }
+            .border-container{
+             width: 320px;
+             display: flex;
+             justify-content: space-between;
+                .b-cont{
+                    padding: 0px 10px;
+                    height: 32px;
+                    border: 1px solid $border-c;
+                    border-radius: 34px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .p-cont{
+                        font-family: 'Noto Sans Georgian';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 24px;
+                        color: $goose-bottom;
+                    }
+                }
+            }
+            }
+                
+        .pay-box{
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            .pay-b{
+                display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    padding-bottom: 35px;
+    .top-pay{
+        
+        .price{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .h1-payment{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 40px;
+                color: $date-title;
+            }
+            .h2-inst{
+                font-family: 'Noto Sans Georgian';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 24px;
+                color: $blue-c;
+            }
+        }
+        .book{
+            .reserv{
+                font-family: 'Noto Sans Georgian';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                background: #1A73E7;
+                border-radius: 5px;
+                color: $bc-2;
+                border: none;
+                width: 186px;
+                height: 48px;
+                margin-top: 30px;
+            }
+        }
+    
+            }
+            .detail{
+                padding: 0px 10px;
+                height: 32px;
+                border: 1px solid $border-c;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    .h1-detail{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $date-title;
+                    }
+            }   
+        }
+            }
+           
+     }
+}   
+
+.ticket-bottom{
+    margin-top: 30px;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width:$mobile-width){
+    body{
+        padding: 5px !important;
+    }
+    .sides{
+        width: 360px !important;
+        height: 370px !important;
+        .ticket-container{
+            border: none !important;
+            .top-bottom>.center,
+            .top-bottom>.bottom,
+            .date-box,
+            .ticket-bottom,
+            .border-container,
+            .top-bottom{
+                display: none !important;
+            }
+        }
+        .pay-box{
+            display: none !important;
+        }
+        .mobile{
+            display: flex !important;
+            .mobile-sides{
+                .top-mobile{
+                    width: 300px;
+                    border-bottom: dashed $border-c;
+                    padding-bottom: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .h2-mob{
+                        width: 400px;
+                    }
+                    .mob-tick{
+                        .mob-tick-t{
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            .mob-time{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 32px;
+                                color:$goose-bottom;
+                            }
+                            .circle-box{
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                        .mob-tick-b{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 303px;
+                            .tick{
+                                font-family: 'Noto Sans Georgian';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 24px;
+                                color:$mob-date-bottom
+                            }
+                        }
+                    }
+                }
+                .bot-mobile{
+                    .pay-b-mob{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    justify-content: center;
+                    align-items: center;
+                    .reserv-mob{
+                        font-family: 'Noto Sans Georgian';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        background: #1A73E7;
+                        border-radius: 5px;
+                        color: $bc-2;
+                        width: 300px;
+                        height: 48px;
+                        border: none;
+                        margin-top: 30px;
+                        }
+                        .h2-inst-mob{
+                            font-family: 'Noto Sans Georgian';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: $blue-c;
+                        }
+                        .h1-detail-mob{
+                            font-family: 'Noto Sans Georgian';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 24px;
+                            color: $blue-c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
